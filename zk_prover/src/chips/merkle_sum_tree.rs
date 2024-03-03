@@ -182,6 +182,8 @@ impl<const N_CURRENCIES: usize> MerkleSumTreeChip<N_CURRENCIES> {
     /// | `current_balance` | `element_balance` | `sum`      |
     ///
     /// At row 0 sum_selector is enabled.
+
+    //@change goin to make changes in the sum constraint chip
     pub fn sum_balances_per_level(
         &self,
         mut layouter: impl Layouter<Fp>,
